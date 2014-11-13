@@ -1,7 +1,7 @@
-/*! Hammer.JS - v1.0.6dev - 2013-11-05
+/*! Hammer.JS - v1.0.6dev - 2014-11-13
  * http://eightmedia.github.com/hammer.js
  *
- * Copyright (c) 2013 Jorik Tangelder <j.tangelder@gmail.com>;
+ * Copyright (c) 2014 Jorik Tangelder <j.tangelder@gmail.com>;
  * Licensed under the MIT license */
 
 (function(window, undefined) {
@@ -770,9 +770,9 @@ Hammer.detection = {
    */
   startDetect: function startDetect(inst, eventData) {
     // already busy with a Hammer.gesture detection on an element
-    if(this.current) {
-      return;
-    }
+    // if(this.current) { commented because it stops this one while going on with the others
+    //   return;
+    // }
 
     this.stopped = false;
 

@@ -128,6 +128,7 @@ module.exports = (grunt) ->
 
   # Default task(s).
   grunt.registerTask 'default', ['connect','watch']
-  grunt.registerTask 'build', ['concat','uglify','test']
+  # grunt.registerTask 'build', ['concat','uglify','test']
+  grunt.registerTask 'build', ['concat','uglify']
   grunt.registerTask 'test', ['jshint','qunit']
   grunt.registerTask 'test-full', ['build','jshint','connect','saucelabs-qunit']

@@ -20,9 +20,9 @@ Hammer.detection = {
    */
   startDetect: function startDetect(inst, eventData) {
     // already busy with a Hammer.gesture detection on an element
-    if(this.current) {
-      return;
-    }
+    // if(this.current) { commented because it stops this one while going on with the others
+    //   return;
+    // }
 
     this.stopped = false;
 
